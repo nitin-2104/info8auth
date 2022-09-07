@@ -55,9 +55,39 @@
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="name" value="{{ __('Name') }}" />
-            <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
+            <x-jet-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="first name" />
             <x-jet-input-error for="name" class="mt-2" />
         </div>
+
+        <!-- Phone Number -->                             
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="phone_number" value="{{ __('Phone Number') }}" />
+            <x-jet-input id="phone_number" type="text" class="mt-1 block w-full" wire:model.defer="state.phone_number" autocomplete="Phone Number" />
+            <x-jet-input-error for="phone_number" class="mt-2" />
+        </div>
+
+        <!-- Qualification -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="qualification" value="{{ __('Qualification') }}" />
+            <x-jet-input id="qualification" type="text" class="mt-1 block w-full" wire:model.defer="state.qualification" autocomplete="Qualification" />
+            <x-jet-input-error for="qualification" class="mt-2" />
+        </div>
+          
+        <!-- Address -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="address" value="{{ __('Address') }}" />
+            <x-jet-input id="address" type="text" class="mt-1 block w-full" wire:model.defer="state.address" autocomplete="Address" />
+            <x-jet-input-error for="address" class="mt-2" />
+        </div>
+          
+        <!-- Gender   -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="gender" value="{{ __('Gender') }}" />
+            <x-jet-input id="gender" type="text" class="mt-1 block w-full" wire:model.defer="state.gender" autocomplete="Gender" />
+            <x-jet-input-error for="gender" class="mt-2" />
+        </div>
+        
+
 
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">

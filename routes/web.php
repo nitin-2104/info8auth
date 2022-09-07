@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/product', function () {
+        return view('product');
+    })->name('product');
+
+    Route::post('/product',[ProductController::class,'details']);
+    Route::view('add','details');
+
 });
